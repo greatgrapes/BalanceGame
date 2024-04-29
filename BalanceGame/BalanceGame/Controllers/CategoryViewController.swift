@@ -21,7 +21,7 @@ final class CategoryViewController: UIViewController {
         super.viewDidLoad()
         // 라벨 생성
         let titleLabel = UILabel()
-        titleLabel.text = "💖사랑이랑 밸런스 게임💖"
+        titleLabel.text = "💖밸런스 게임💖"
         titleLabel.font = UIFont(name: "GOSEONGGEUMGANGNURI", size: 17)
         titleLabel.sizeToFit()
 

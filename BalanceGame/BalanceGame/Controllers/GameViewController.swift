@@ -32,14 +32,12 @@ final class GameViewController: UIViewController  {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     var currentRoundQuestions: [String] = []
     var currentRoundIndex = 0
     var selectedQuestions: [String] = []
     
     let rootView = GameView()
-    // 데이터 점수 변수
-    
+
     override func loadView() {
         view = rootView
     }
@@ -49,10 +47,8 @@ final class GameViewController: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // 타이틀 뷰로 라벨 설정
         navigationItem.titleView = titleLabel
-       
         rootView.collectionView.register(GameCell.self, forCellWithReuseIdentifier: GameCell.id)
         rootView.collectionView.delegate = self
         rootView.collectionView.dataSource = self
