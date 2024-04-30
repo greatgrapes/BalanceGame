@@ -46,8 +46,8 @@ final class CategoryCell: UICollectionViewCell {
     private func layout() {
         networkImageView.snp.makeConstraints { make in
             make.center.equalToSuperview()
-            make.width.equalTo(150) // 이미지 크기를 지정해줍니다.
-            make.height.equalTo(150) // 이미지 크기를 지정해줍니다.
+            make.width.equalTo(150)
+            make.height.equalTo(150) 
         }
         
         networkLabel.snp.makeConstraints { make in
